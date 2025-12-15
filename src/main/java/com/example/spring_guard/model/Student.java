@@ -12,7 +12,6 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 @FieldDefaults(level= AccessLevel.PRIVATE)
-@RequiredArgsConstructor
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -21,5 +20,5 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    String name;
+    String fullName;
 }
